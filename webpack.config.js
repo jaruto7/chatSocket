@@ -5,9 +5,9 @@ const htmlWebpackPlugin = require( 'html-webpack-plugin' );
 module.exports = ( env ) => {
     return {
         mode: env || 'production',
-        entry: './src/index.js',
+        entry: '/index.js',
         plugins: [new htmlWebpackPlugin({
-            template: 'client/index.html',
+            template: './client/index.js',
             filename: 'index.html',
             inject: 'body'
         })],
@@ -15,7 +15,7 @@ module.exports = ( env ) => {
             path: path.resolve( __dirname, 'build' ),
             filename: 'app.bundle.js'
         },
-        entry: './client.index.js',
+        // entry: './client.index.js',
         output: {
             path: path.resolve( __dirname, 'public' ),
             filename: 'app.bundle.js'

@@ -11,9 +11,9 @@ const server = http.createServer( app );
 
 // Podepnij socket.io do utworzonego uprzednio serwera
 const io = socketIo( server );
-const UsersService = require( '/UsersService' );
+const usersService = require( '/UsersService' );
 
-const UsersService = new UsersService();
+const usersService = new UsersService();
 
 // Ustaw w aplikacji express miejsce "/public" z ktorego beda serwowowane pliki
 app.use( express.static( `${ __dirname }/public` ) );

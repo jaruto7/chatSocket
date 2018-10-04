@@ -5,9 +5,9 @@ const htmlWebpackPlugin = require( 'html-webpack-plugin' );
 module.exports = ( env ) => {
     return {
         mode: env || 'production',
-        entry: '/index.js',
+        entry: './client/index.js',
         plugins: [new htmlWebpackPlugin({
-            template: './client/index.js',
+            template: './client/index.html',
             filename: 'index.html',
             inject: 'body'
         })],

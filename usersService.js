@@ -1,4 +1,4 @@
-class UserService {
+class UsersService {
     constructor() {
         this.users = [];
     }

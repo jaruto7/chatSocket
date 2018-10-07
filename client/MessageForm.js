@@ -23,7 +23,7 @@ class MessageForm extends Component {
 
     render() {
         return (
-            <form className={ styles.MessageForm } onSubmit={ e => this.handleSubmit( e ) } value={ this.setState( { text : e.target.value } ) }>
+            <form className={ styles.MessageForm } onSubmit={ e => this.handleSubmit( e ) }>
                 <input
                     className={ styles.MessageInput }
                     onChange={ e => this.changeHandler( e ) }

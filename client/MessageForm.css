@@ -1,11 +1,14 @@
 .MessageForm {
     display: flex;
     flex-direction: row;
+    width: 30vw;
 }
 
 .MessageInput {
+    position: relative;
     flex: 1;
     padding: 20px;
     border: 0;
     border-top: 1px solid #ccc;
+    right: 25vw;
 }

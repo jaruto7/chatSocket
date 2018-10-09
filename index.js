@@ -46,7 +46,7 @@ io.on( 'connection', ( socket ) => {
 
 io.on( 'connection', ( socket ) => {
     socket.on( 'message', ( message ) => {
-        const { name } = usersService.getUserById( socket.id );
+        const { name } = usersService.getUserById( socket.id, name.id );
         socket.broadcast.emit( 'message', {
             text: message.text,
             from: name

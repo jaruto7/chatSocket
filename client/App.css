@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    height: 100vh;
 }
 
 .AppHeader {
@@ -13,12 +14,11 @@ body {
     flex-direction: row;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    height: 10vh;
 }
 
 .AppTitle {
     display: flex;
-    width: 51.4vw;
+    width: 25vw;
     border-right: 1px solid #ccc;
     justify-content: center;
     box-sizing: border-box;
@@ -26,32 +26,22 @@ body {
 }
 
 .AppRoom {
-    position: relative;
     display: flex;
-    width: 40vw;
+    width: 75vw;
     justify-content: center;
     box-sizing: border-box;
     padding: 20px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
-    height: 100vh;
-    top: 45vh;
 }
 
 .AppBody {
-    position: relative;
     display: flex;
     flex-direction: row;
     flex: 1;
-    right: 36em;
-    top: 3.6em;
 }
 
 .MessageWrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 75vw;
     flex: 1;
-    top: 90vh;
 }

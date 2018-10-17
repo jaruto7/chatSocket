@@ -62,12 +62,15 @@ class App extends Component {
                     <div className={ styles.AppRoom }>
                         App room
                     </div>
-                    <div className={styles.AppBody }>
+                
+                    
+                </div>
+                <div className={styles.AppBody }>
                         <UsersList 
                             users={ this.state.users }
                         />
                     </div>
-                    <div className={ styles.MessageWrapper }>
+                <div className={ styles.MessageWrapper }>
                             <MessageList
                                 messages={ this.state.messages }
                             />
@@ -76,7 +79,6 @@ class App extends Component {
                                 name={ this.state.name }
                             />    
                     </div>
-                </div>
             </div>
         );
     }

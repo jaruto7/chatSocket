@@ -1,5 +1,7 @@
 body {
-    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .App {
@@ -7,6 +9,8 @@ body {
     flex-direction: column;
     flex: 1;
     height: 100vh;
+    border: 1px solid #ccc;
+    margin-top: 20px;
 }
 
 .AppHeader {
@@ -37,11 +41,13 @@ body {
     display: flex;
     flex-direction: row;
     flex: 1;
+    background-color: aliceblue;
 }
 
 .MessageWrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    
     width: 75vw;
     flex: 1;
 }

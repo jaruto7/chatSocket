@@ -67,9 +67,7 @@ class App extends Component {
                 </div>
                 <div className={styles.AppBody }>
                         <UsersList 
-                            users={ this.state.users }
-                        />
-                    </div>
+                            users={ this.state.users }/>
                 <div className={ styles.MessageWrapper }>
                             <MessageList
                                 messages={ this.state.messages }
@@ -78,7 +76,9 @@ class App extends Component {
                                 onMessageSubmit={ message => this.handleMessageSubmit( message ) }
                                 name={ this.state.name }
                             />    
-                    </div>
+                    </div>            
+                </div>
+                
             </div>
         );
     }
